@@ -1,814 +1,1059 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>music website</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- <link rel="stylesheet"
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>music website</title>
+        <link rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <!-- <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"> -->
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <!---- navbar section ---->
+        <header>
+            <div class="navbar-container">
+                <!-- logo -->
+                <a href="#" class="logo">Music<span>Website</span></a>
+                <!-- navbar items -->
+                <div class="navbar">
+                    <ul class="navbar-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                    <!-- login button -->
+                    <a href="login.html" class="login"> login</a>
+                </div>
 
-<body>
-    <!---- navbar section ---->
-    <header>
-        <div class="navbar-container">
-            <!-- logo -->
-            <a href="#" class="logo">Music<span>Website</span></a>
-            <!-- navbar items -->
-            <div class="navbar">
-                <ul class="navbar-items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Search</a></li>
-                </ul>
-                <!-- login button -->
-                <a href="login.html" class="login"> login</a>
             </div>
+        </header>
 
-        </div>
-    </header>
-
-    <!----- banner section ------>
-    <section class="banner">
-        <div class="banner-content">
-            <div class="content">
-                <h2> Ex<span>plore</span>,Play,Sh<span>are</span> Top Mu<span>sic</span></h2>
-                <P>We bring together your favourite music services and join
-                    up listening, watching and sharing to
-                    connect your musical world.</P>
-            </div>
-        </div>
-    </section>
-    <!-- playlist section  -->
-    <div>
-        <div class="section-title">
-            <i class="bi bi-music-note-list"></i>
-            <h2>Popular New Realease</h2>
-        </div>
-        <section class="section">
-            <div class="swiper mySwiper container">
-                <div class="swiper-wrapper content">
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">AS It Was</span>
-                                <span class="profession">Harry Style</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="button">
-                                <button class="aboutMe" id="01">play </button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp" alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">Bones</span>
-                                <span class="profession">Imagine Dragons</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="button">
-                                <button class="aboutMe" id="02">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp" alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">Until I Found You</span>
-                                <span class="profession">Stephen Sanchez</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                             <div class="button">
-                                <button class="aboutMe" id="03">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp" alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">EverGreen</span>
-                                <span class="profession">Omar Apollo</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="button">
-                                <button class="aboutMe" id="04">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"  alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">Forget Me</span>
-                                <span class="profession">Lewis Capaldi</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe" id="05">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-
-                            <div class="name-profession">
-                                <span class="name">Out Of Me </span>
-                                <span class="profession">The Weekend</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-
-                            <div class="name-profession">
-                                <span class="name">Far Away</span>
-                                <span class="profession">Mark Tuan</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-
-                            <div class="name-profession">
-                                <span class="name">I believe</span>
-                                <span class="profession">Kamrad</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-
-                            <div class="name-profession">
-                                <span class="name">Love Me More</span>
-                                <span class="profession">Sam Smith</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
+        <!----- banner section ------>
+        <section class="banner">
+            <div class="banner-content">
+                <div class="content">
+                    <h2> Ex<span>plore</span>,Play,Sh<span>are</span> Top Mu<span>sic</span></h2>
+                    <P>We bring together your favourite music services and join
+                        up listening, watching and sharing to
+                        connect your musical world.</P>
                 </div>
             </div>
-            <div class="swiper-button-next button1"></div>
-            <div class="swiper-button-prev button2"></div>
-            <div class="swiper-pagination page1"></div>
         </section>
-    </div>
+        <!-- playlist section  -->
+        <div>
+            <div class="section-title">
+                <i class="bi bi-music-note-list"></i>
+                <h2>Popular New Realease</h2>
+            </div>
+            <section class="section">
+                <div class="swiper mySwiper container">
+                    <div class="swiper-wrapper content">
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">AS It Was</span>
+                                    <span class="profession">Harry Style</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="button">
+                                    <button class="aboutMe" id="play1">play
+                                    </button>
+                                    <audio id="song1" src="songs/1.mp3"
+                                        type="audio/mp3"></audio>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
 
 
-    <!-- recommended song -->
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">Bones</span>
+                                    <span class="profession">Imagine Dragons</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="button">
+                                    <button class="aboutMe" id="play2">Play</button>
+                                    <audio id="song2" src="songs/5.mp3"
+                                        type="audio/mp3"></audio>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
 
-    <div>
-        <div class="section-title">
-            <i class="bi bi-music-note-list"></i>
-            <h2>Top Songs Playlist 2022</h2>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">Until I Found You</span>
+                                    <span class="profession">Stephen Sanchez</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="button">
+                                    <button class="aboutMe" id="play3">Play</button>
+                                    <audio id="song3" src="songs/2.mp3"
+                                        type="audio/mp3"></audio>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">EverGreen</span>
+                                    <span class="profession">Omar Apollo</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="button">
+                                    <button class="aboutMe" id="play4">Play</button>
+                                    <audio id="song4" src="songs/3.mp3"
+                                        type="audio/mp3"></audio>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">Forget Me</span>
+                                    <span class="profession">Lewis Capaldi</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe" id="play5">Play</button>
+                                    <audio id="song5" src="songs/4.mp3"
+                                        type="audio/mp3"></audio>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Out Of Me </span>
+                                    <span class="profession">The Weekend</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe" id="play6">Play</button>
+                                    <audio id="song6" src="songs/6.mp3"
+                                        type="audio/mp3"></audio>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Far Away</span>
+                                    <span class="profession">Mark Tuan</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe" id="play7">Play</button>
+                                    <audio id="song7" src="songs/7.mp3"
+                                        type="audio/mp3"></audio>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">I believe</span>
+                                    <span class="profession">Kamrad</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe" id="play8">Play</button>
+                                    <audio id="song8" src="songs/8.mp3"
+                                        type="audio/mp3"></audio>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Love Me More</span>
+                                    <span class="profession">Sam Smith</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe" id="play9">Play</button>
+                                    <audio id="song9" src="songs/9.mp3"
+                                        type="audio/mp3"></audio>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next button1"></div>
+                <div class="swiper-button-prev button2"></div>
+                <div class="swiper-pagination page1"></div>
+            </section>
         </div>
-        <section class="section">
-            <div class="swiper mySwiper2 container">
-                <div class="swiper-wrapper content">
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
 
-                            <div class="name-profession">
-                                <span class="name">AS It Was</span>
-                                <span class="profession">Harry Style</span>
-                            </div>
 
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
+        <!-- recommended song -->
 
-                            <div class="button">
-                                <button class="aboutMe">Left and Right </button>
-                                <button class="hireMe">Bts</button>
-                            </div>
-                        </div>
-                    </div>
+        <div>
+            <div class="section-title">
+                <i class="bi bi-music-note-list"></i>
+                <h2>Top Songs Playlist 2022</h2>
+            </div>
+            <section class="section">
+                <div class="swiper mySwiper2 container">
+                    <div class="swiper-wrapper content">
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
 
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
+                                <div class="name-profession">
+                                    <span class="name">AS It Was</span>
+                                    <span class="profession">Harry Style</span>
+                                </div>
 
-                            <div class="name-profession">
-                                <span class="name">Bones</span>
-                                <span class="profession">Imagine Dragons</span>
-                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
 
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
+                                <div class="button">
+                                    <button class="aboutMe">play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
 
-                            <div class="name-profession">
-                                <span class="name">Until I Found You</span>
-                                <span class="profession">Stephen Sanchez</span>
-                            </div>
+                                <div class="name-profession">
+                                    <span class="name">Bones</span>
+                                    <span class="profession">Imagine Dragons</span>
+                                </div>
 
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
 
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-
-                            <div class="name-profession">
-                                <span class="name">EverGreen</span>
-                                <span class="profession">Omar Apollo</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
 
-                            <div class="name-profession">
-                                <span class="name">Forget Me</span>
-                                <span class="profession">Lewis Capaldi</span>
-                            </div>
+                                <div class="name-profession">
+                                    <span class="name">Until I Found You</span>
+                                    <span class="profession">Stephen Sanchez</span>
+                                </div>
 
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
 
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-
-                            <div class="name-profession">
-                                <span class="name">Out Of Me </span>
-                                <span class="profession">The Weekend</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
 
-                            <div class="name-profession">
-                                <span class="name">Far Away</span>
-                                <span class="profession">Mark Tuan</span>
-                            </div>
+                                <div class="name-profession">
+                                    <span class="name">EverGreen</span>
+                                    <span class="profession">Omar Apollo</span>
+                                </div>
 
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
 
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-
-                            <div class="name-profession">
-                                <span class="name">I believe</span>
-                                <span class="profession">Kamrad</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
 
-                            <div class="name-profession">
-                                <span class="name">Love Me More</span>
-                                <span class="profession">Sam Smith</span>
-                            </div>
+                                <div class="name-profession">
+                                    <span class="name">Forget Me</span>
+                                    <span class="profession">Lewis Capaldi</span>
+                                </div>
 
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
 
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Out Of Me </span>
+                                    <span class="profession">The Weekend</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Far Away</span>
+                                    <span class="profession">Mark Tuan</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">I believe</span>
+                                    <span class="profession">Kamrad</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+
+                                <div class="name-profession">
+                                    <span class="name">Love Me More</span>
+                                    <span class="profession">Sam Smith</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next button3"></div>
+                <div class="swiper-button-prev button4"></div>
+                <div class="swiper-pagination page2"></div>
+            </section>
+        </div>
+
+             <!-- this is the popular artists section -->
+             <div class="popular-artists">
+                <!-- this is the heading of popular artists section -->
+                <!-- <h1 style="text-align:center; color:aliceblue">
+                    Popular Artists
+                </h1> -->
+                <!-- this contains the content of the popular artists section -->
+                <div class="popular-artist-content">
+                    <!-- if user clicks on any one artist, it will redirect the user to the second page -->
+                    <!-- following is the list of artists -->
+                    <!-- first artist -->
+                    <a href="Single Playlist Screen.html">
+                        <div>
+                            <img src="assests/popular artists/adele.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Adele
+                            </p>
+                        </div>
+                    </a>
+                    <!-- second artist -->
+                    <a href="Single Playlist Screen.html">
+                        <div>
+                            <img src="assests/popular artists/billie eilish.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Billie Eilish
+                            </p>
+                        </div>
+                    </a>
+                    <!-- third artist -->
+                    <a href="Single Playlist Screen.html">
+                        <div>
+                            <img src="assests/popular artists/bruno mars.jpg"
+                                width="15vw" height="10vw">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Bruno Mars
+                            </p>
+                        </div>
+                    </a>
+                    <!-- fourth artist -->
+                    <a href="Single Playlist Screen.html">
+                        <div>
+                            <img src="assests/popular artists/Camila Cabello.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Camila Cabello
+                            </p>
+                        </div>
+                    </a>
+                    <!-- fifth artist -->
+                    <a href="Single Playlist Screen.html">
+                        <div>
+                            <img src="assests/popular artists/drake.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Drake
+                            </p>
+                        </div>
+                    </a>
+                    <!-- 6th artist -->
+                    <a href="Single Playlist Screen.html">
+                        <div>
+                            <img src="assests/popular artists/ed sheeran.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Ed Sheeran
+                            </p>
+                        </div>
+                    </a><!-- 7th artist -->
+                    <a href="Single Playlist Screen.html">
+                        <div>
+                            <img src="assests/popular artists/eminem.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Eminem
+                            </p>
+                        </div>
+                    </a><!-- 8th artist -->
+                    <a href="Single Playlist Screen.html">
+                        <div>
+                            <img src="assests/popular artists/Katy perry.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Katy Perry
+                            </p>
+                        </div>
+                    </a>
+                    <!-- 9th artist -->
+                    <a href="Single Playlist Screen.html">
+                        <div>
+                            <img src="assests/popular artists/Lil wayne.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                6ix9ine
+                            </p>
+                        </div>
+                    </a>
+                    <!-- 10th artist -->
+                    <a href="Single Playlist Screen.html">
+                        <div>
+                            <img src="assests/popular artists/posty.png">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Post Malone
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="swiper-button-next button3"></div>
-            <div class="swiper-button-prev button4"></div>
-            <div class="swiper-pagination page2"></div>
-        </section>
-    </div>
 
-<!-- ṛecommended song -->
-    <div>
-        <div class="section-title">
-            <i class="bi bi-music-note-list"></i>
-            <h2>Recommended Song playlist</h2>
+            
+        <!-- ṛecommended song -->
+        <div>
+            <div class="section-title">
+                <i class="bi bi-music-note-list"></i>
+                <h2>Recommended Song playlist</h2>
+            </div>
+            <section class="section">
+                <div class="swiper mySwiper3 container">
+                    <div class="swiper-wrapper content">
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">AS It Was</span>
+                                    <span class="profession">Harry Style</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">play </button>
+                                    <button class="hireMe">download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">Bones</span>
+                                    <span class="profession">Imagine Dragons</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">Until I Found You</span>
+                                    <span class="profession">Stephen Sanchez</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">EverGreen</span>
+                                    <span class="profession">Omar Apollo</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">Forget Me</span>
+                                    <span class="profession">Lewis Capaldi</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">Out Of Me </span>
+                                    <span class="profession">The Weekend</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">Far Away</span>
+                                    <span class="profession">Mark Tuan</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">I believe</span>
+                                    <span class="profession">Kamrad</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img
+                                        src="./assests/black-itunes-icon_157037.webp"
+                                        alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">Love Me More</span>
+                                    <span class="profession">Sam Smith</span>
+                                </div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                                <div class="button">
+                                    <button class="aboutMe">Play</button>
+                                    <button class="hireMe">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next button5"></div>
+                <div class="swiper-button-prev button6"></div>
+                <div class="swiper-pagination page3"></div>
+            </section>
         </div>
-        <section class="section">
-            <div class="swiper mySwiper3 container">
-                <div class="swiper-wrapper content">
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">AS It Was</span>
-                                <span class="profession">Harry Style</span>
-                            </div>
 
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Left and Right </button>
-                                <button class="hireMe">Bts</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">Bones</span>
-                                <span class="profession">Imagine Dragons</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">Until I Found You</span>
-                                <span class="profession">Stephen Sanchez</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">EverGreen</span>
-                                <span class="profession">Omar Apollo</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">Forget Me</span>
-                                <span class="profession">Lewis Capaldi</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">Out Of Me </span>
-                                <span class="profession">The Weekend</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">Far Away</span>
-                                <span class="profession">Mark Tuan</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">I believe</span>
-                                <span class="profession">Kamrad</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="./assests/black-itunes-icon_157037.webp"
-                                    alt="">
-                            </div>
-                            <div class="name-profession">
-                                <span class="name">Love Me More</span>
-                                <span class="profession">Sam Smith</span>
-                            </div>
-
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-
-                            <div class="button">
-                                <button class="aboutMe">Play</button>
-                                <button class="hireMe">Download</button>
-                            </div>
-                        </div>
-                    </div>
-
+         <!-- this is another themes portion, that electronic, party and road theme -->
+         <div class="music-themes-2">
+            <!-- 3 divs content -->
+            <div class="outer-div">
+                <div class="inner-div">
+                    <span>party</span>
                 </div>
             </div>
-            <div class="swiper-button-next button5"></div>
-            <div class="swiper-button-prev button6"></div>
-            <div class="swiper-pagination page3"></div>
-        </section>
-    </div>
+            <div class="outer-div">
+                <div class="inner-div">
+                    <span>Chill</span>
+                </div>
+            </div>
+            <div class="outer-div">
+                <div class="inner-div">
+                    <span>Travel</span>
+                </div>
+            </div>
+            <div class="outer-div">
+                <div class="inner-div">
+                    <span>workout </span>
+                </div>
+            </div>
+        </div>
 
-    <div class="bottom">
+        <!-- footer section  -->
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h2>My Academy</h2>
+                    <p>Wits seamlessly connects your members with commmunity,
+                    resources.</p>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa icons fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+                <div class="footer-links">
+                    <div class="platform">
+                        <h3>Platform</h3>
+                        <ul>
+                            <a href="#"><li>How it Works</li></a>
+                            <a href="#"><li>Checkout</li></a>
+                            <a href="#"><li>Fraud</li></a>
+                            <a href="#"><li>Protection</li></a>
+                            <a href="#"><li>Payments</li></a>
+                            <a href="#"><li>Accounts</li></a>
+                        </ul>
+                    </div>
+                    <div class="learning">
+                        <h3>Learn</h3>
+                        <ul>
+                            <a href="#"><li>Resources</li></a>
+                            <a href="#"><li>Blog</li></a>
+                            <a href="#"><li>FAQs</li></a>
+                            <a href="#"><li>ThinkShop</li></a>
+                        </ul>
+                    </div>
+                    <div class="About">
+                        <h3>About</h3>
+                        <ul>
+                            <a href="#"><li>Careers</li></a>
+                            <a href="#"><li>Team</li></a>
+                            <a href="#"><li>Partners</li></a>
+                            <a href="#"><li>Contact Us</li></a>
+                            <a href="#"><li>News & Press</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contactus">
+                    <h2>Contact US</h2>
+                    <button>Get in touch</button>
+                </div>
+            </div>
+            <div class="copywright-tag">&copyCopyright My Academy. All rights reserved</div>
+        </footer>
+
+
+        <!-- <div class="bottom">
         <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
         <div class="icons">
-            <!-- fontawesome icons -->
+            
             <i class="fas fa-3x fa-step-backward" id="previous"></i>
             <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
             <i class="fas fa-3x fa-step-forward" id="next"></i>
@@ -816,11 +1061,10 @@
         <div class="songInfo">
             <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Best of Me</span>
         </div>
-    </div>
+    </div> -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-
-</body>
+    </body>
 
 </html>

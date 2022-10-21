@@ -11,6 +11,8 @@
     --second-color: #62e36c;
     --text-color: #172317;
     --bg-color: #fff;
+    --black: #000000;
+    --light-red: #dd4545;
 }
 
 a {
@@ -345,6 +347,249 @@ header {
   cursor: pointer;
 }
 
+/* artist section  */
+
+.popular-artists {
+	position: relative;
+	width: 80%;
+  margin: auto;
+	height: auto;
+	box-sizing: border-box;
+}
+/* container of the popular artists */
+.popular-artist-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+/* images in the popular artists section */
+.popular-artists div a img {
+	width: 10vw;
+	min-width: 60px;
+	min-height: 60px;
+	height: 10vw;
+	border-radius: 50%;
+}
+/* content of the container in popular artists section */
+.popular-artists > div {
+	/* position: relative; */
+	margin: 5px;
+	text-align: center;
+}
+/* I generally use the combination of 3 properties, i.e. display:flex, justify content and align items to position an element */
+/* at the center of the screen. this is my favourite way. there are other options too, but I prefer this one because */
+/* it also takes care of the flexibility of the contents of the div */
+.popular-artist-content > a > div {
+	position: relative;
+	display: flex;
+  margin: 1rem;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.popular-artist-content > a > div > div {
+	position: absolute;
+	display: flex;
+	/* top: 0px;
+    left: 0px; */
+	top: 0px;
+	width: 10vw;
+	min-width: 60px;
+	min-height: 60px;
+	height: 10vw;
+	border-radius: 50%;
+	background-color: rgb(0, 0, 0);
+	opacity: 0;
+	transition: opacity ease-in-out 0.1s;
+}
+/* additional icons in this section */
+.popular-artist-content a div div i {
+	margin: auto;
+	font-size: 3vw;
+	opacity: 0;
+	transition: opacity ease-in-out 0.2s;
+} /* added hovering effects */
+.popular-artist-content a div div:hover {
+	opacity: 0.5;
+}
+.popular-artist-content a div div:hover i {
+	opacity: 1;
+}
+/* text portion in popular artists section */
+.popular-artists div p {
+	text-align: center;
+  color: white;
+}
+
+.music-themes-2 {
+	position: relative;
+	height: auto;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+/* this outer div contains the inner div and the image and text */
+.outer-div {
+	width: 19.5vw;
+	height: 13vw;
+	overflow: hidden;
+	min-width: 123px;
+	min-height: 82px;
+	margin: 5px;
+	cursor: pointer;
+}
+/* inner div portion */
+.inner-div {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	background-position: center;
+	background-size: cover;
+	transition: all ease-in-out 0.3s;
+}
+/* divs corresponding to each of the 3 sub sections in the themes section */
+/* party */
+.music-themes-2 .outer-div:nth-child(1) .inner-div {
+	background-image: url("assests/music\ themes\ 2/party.jpg");
+}
+/* electronic */
+.music-themes-2 .outer-div:nth-child(2) .inner-div {
+	background-image: url("assests/music\ themes\ 2/electronic.jpg");
+}
+/* road */
+.music-themes-2 .outer-div:nth-child(3) .inner-div {
+	background-image: url("assests/music\ themes\ 2/road.jpg");
+}
+
+.music-themes-2 .outer-div:nth-child(4) .inner-div {
+	background-image: url("assests/music\ themes\ 2/workout.webp");
+}
+/* hivering actions: the text should be scaled down on hover and the background image should be scaled up at the same time gap */
+.outer-div:hover .inner-div {
+	transform: scale(1.3);
+}
+.outer-div .inner-div span {
+	transform: scale(1);
+	transition: all ease-in-out 0.3s;
+}
+.outer-div:hover .inner-div span {
+	transform: scale(0.75);
+}
+.inner-div::before {
+	content: "";
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.3s;
+}
+/* adjusting inner div properties */
+.inner-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.outer-div .inner-div span {
+	/* color: white; */
+	color: white;
+	font-size: 2.5vw;
+}
+
+/* footer section  */
+
+.footer-container{
+	width: 100vw;
+	background-color: #1e1c1c8c;
+	display: flex;
+	justify-content: space-around;
+	padding: 3rem 0 3rem 0;
+}
+
+/*footer left side start*/
+.footer-logo{
+	/*background-color: yellowgreen;*/
+	width: 18vw;
+	margin-left: 7rem;
+}
+/* .footer-logo h2{
+	font-size: 2.7rem;
+} */
+.footer-logo p{
+	/* font-size: 1.4rem; */
+	color: #6e6b6b;
+  color: white;
+	padding: 1.5rem 0rem;
+	line-height: 2.1rem;
+}
+.footer-logo h2,h3{
+  color: white;
+}
+.footer-logo a{
+	text-decoration: none;
+}
+.fa{
+	background-color: var(--black);
+	color: #ffffff;
+	padding: .6rem;
+	border-radius: .3rem;
+}
+.icons{
+	margin: 0rem 1.5rem;
+}
+/*footer left side ends*/
+/*footer center starts*/
+.footer-links{
+	width: 32vw;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.4rem;
+}
+.footer-links ul a li{
+	list-style-type: none;
+	padding: 1rem 0rem;
+  font-size: 1rem;
+  color: white;
+}
+.footer-links ul a{
+	text-decoration: none;
+	color: #6e6b6b;
+}	
+/*footer center ends*/
+
+/*footer right section*/
+.footer-contactus{
+	width: 17vw;
+}
+.footer-contactus h2{
+	/* font-size: 1.9rem; */
+  color: white;
+}
+.footer-contactus button{
+	padding: 1.4rem 2rem;
+    /* font-size: 1.6rem; */
+    background: var(--light-red);
+    border: none;
+    border-radius: .4rem;
+    color: #ffff;
+    margin-top: 1.6rem;
+    cursor: pointer;
+}
+.copywright-tag{
+	background-color: lightgray;
+	padding: 1.5rem;
+	/* font-size: 1.5rem; */
+	text-align: center;
+}
+
+
 /*************** queries************************ */
 @media screen and (max-width:1042px) {
     .navbar-container {
@@ -372,4 +617,73 @@ header {
     .banner .banner-content p {
         font-size: 1rem;
     }
+}
+
+@media(max-width: 986px){
+	html{
+		font-size: 55%;
+	}
+}
+@media(max-width: 800px){
+	.footer-container{
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-logo{
+		width: 32vw;
+		margin-bottom: 3rem;
+		margin-left: 0rem;
+	}
+	/* .footer-links{
+		flex-direction: column;
+		text-align: center;
+	} */
+	.footer-links h3{
+		font-size: 2.4rem;
+		margin: 1rem 0px;
+	}
+	.footer-contactus{
+		width: 21vw;
+		margin-top: 2.4rem;
+		text-align: center;
+	}
+	.footer-contactus h2{
+		font-size: 2.5rem;
+	}
+}
+
+@media (max-width:769px) {
+  .banner{
+    height: 70vh;
+  }
+  .popular-artists div p {
+    font-size: 2rem;
+}
+  .popular-artists{
+    width: 90% !important;
+  }
+  /* .card{
+    width: 295px !important;
+    margin: 15px 34px;
+  } */
+  .outer-div {
+    width: 40.5vw;
+    height: 29vw;
+  }
+
+  .popular-artists div a img {
+    width: 19vw;
+    height: 16vw;
+  }
+}
+
+@media (max-width:426px){
+  .outer-div {
+    width: 70.5vw;
+    height: 37vw;
+
+  }
+  .popular-artists div p {
+    font-size: 1rem !important;
+}
 }
