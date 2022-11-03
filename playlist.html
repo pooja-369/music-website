@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catchy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navigation-bar">
+        <!-- this div contains the logo and title os the page -->
+        <div class="title-combo">
+            <div class="website-logo">
+                <img src="assests/website_logo.png">
+            </div>
+            <div class="website-name">
+                <h2>
+                    <a href="index.html">
+                        Atish
+                    </a>
+                </h2>
+                <h6 style="color: magenta;">
+                    <a href="index.html">Music Player</a>
+                </h6>
+            </div>
+        </div>
+        <!-- this is the animated favourites text -->
+        <div class="favs">
+            <h4>
+                Favourites
+            </h4>
+        </div>
+        <div class="search-bar">
+            <div>
+                <!-- magnifying glass- search icon -->
+                <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div>
+                <!-- mic icon -->
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+        <!-- this is for notification bell -->
+        <div class="notification-bell">
+            <img src="assests/bell_icon.png"> Notifications
+
+        </div>
+        <!-- this is for profile picture -->
+        <div class="profile-picture">
+            <img src="assests/profile_picture.png">
+        </div>
+    </nav>
+    <div class="home">
+        <div class="container">
+            <div class="songList">
+                <h1>Best of NCS - No Copyright Sounds</h1>
+                <div class="songItemContainer">
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songlistplay"><span class="timestamp">05:34  </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songlistplay"><span class="timestamp">05:34  </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songlistplay"><span class="timestamp">05:34  </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songlistplay"><span class="timestamp">05:34  </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songlistplay"><span class="timestamp">05:34  </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songlistplay"><span class="timestamp">05:34</span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songlistplay"><span class="timestamp">05:34  </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 </span></span>
+                    </div>
+                    <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">Let me Love You</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 </span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="songBanner"></div>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Best of Me</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
