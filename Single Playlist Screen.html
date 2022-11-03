@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Playlist</title>
     <!-- it is connected to two stylesheets -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="Single Playlist Screen Styles.css"><!-- this is the main stylesheet -->
     <!-- desktop first approach is used for the same. -->
     <link rel="stylesheet" type="text/css" href="Secondary page responsive.css">
@@ -208,7 +209,7 @@
                             04
                         </div>
                         <div>
-                            <img src="assests/playlist/after.jpg">
+                            <img src="assests/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg">
                             <div class="play-btn">
                                 <i class="fas fa-play"></i>
                             </div>
@@ -373,7 +374,7 @@
                             09
                         </div>
                         <div>
-                            <img src="assests/playlist/after.jpg">
+                            <img src="assests/playlist/stoney.jpg">
                             <div class="play-btn">
                                 <i class="fas fa-play"></i>
                             </div>
@@ -400,13 +401,13 @@
                     </div>
                 </div>
                 <!-- playlist item -->
-                <div class="playlist-item">
+                <!-- <div class="playlist-item">
                     <div class="left">
                         <div>
                             10
                         </div>
                         <div>
-                            <img src="assets/playlist/after.jpg">
+                            <img src="assets/playlist/stoney.jpg">
                             <div class="play-btn">
                                 <i class="fas fa-play"></i>
                             </div>
@@ -431,7 +432,7 @@
                             <i class="fas fa-plus"></i>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- playlist item -->
                 <div class="playlist-item">
                     <div class="left">
@@ -504,74 +505,21 @@
     <!-- main part of the page is over. -->
     <!-- this is the footer part. -->
     <!-- its position will be fixed to the screen bottom. -->
-    <footer>
-        <div class="active-song-description">
-            <!-- song image -->
-            <div id="song-image">
-                <img src="assets/playlist/stoney.jpg">
-            </div>
-            <!-- song name and author -->
-            <div class="song-desc">
-                <div>
-                    White Iverson
-                </div>
-                <div>
-                    Post Malone
-                </div>
-            </div>
-                <!-- heart icon and ban icon -->
-            <div class="heart-and-ban-icon">
-                <span>
-                    <i class="far fa-heart"></i>
-                </span>
-                <span>
-                    <i class="fas fa-ban"></i>
-                </span>
-            </div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
         </div>
-        <!-- these are the main player controls -->
-        <div class="player">
-            <div class="controls">
-                <div><i class="fas fa-random"></i></div>
-                <div><i class="fas fa-step-backward"></i></div>
-                <div><i class="fas fa-pause-circle"></i></div>
-                <div><i class="fas fa-step-forward"></i></div>
-                <div><i class="fas fa-redo"></i></div>
-            </div>
-            <!-- this is the slider -->
-            <div id="slider">
-                <!-- current time -->
-                <div class="time">
-                    1:39
-                </div>
-                <div class="slidecontainer">
-                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
-                </div>
-                <!-- total time -->
-                <div class="time">
-                    4:44
-                </div>
-            </div>
+        <div class="songInfo">
+             <span id="masterSongName">Best of Me</span>
         </div>
-        <!-- other icons including the volume slider and all -->
-        <div class="extras">
-            <div>
-                <i class="fas fa-list-ul"></i>
-            </div>
-            <div>
-                <i class="fas fa-laptop"></i>
-            </div>
-            <div>
-                <i class="fas fa-volume-up"></i>
-            </div>
-            <div class="slidecontainer" style="width:30%;">
-                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
-            </div>
-            <div>
-                <i class="fas fa-expand-alt"></i>
-            </div>
-        </div>
-    </footer>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -426,6 +426,7 @@ header {
 	position: relative;
 	height: auto;
 	width: 100%;
+  margin-bottom: 5rem;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
@@ -587,6 +588,70 @@ header {
 	padding: 1.5rem;
 	/* font-size: 1.5rem; */
 	text-align: center;
+}
+
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  height: 130px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: -webkit-fill-available;
+}
+
+.icons {
+  margin-top: 14px;
+}
+
+.icons i {
+  cursor: pointer;
+}
+
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
+}
+
+.songItemContainer {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.songItem {
+  height: 106px;
+  display: flex;
+  background-color: white;
+  color: black;
+  margin: 27px 28px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+  font-size: 1.2rem;
+}
+
+.songItem img {
+  width: 90px;
+  margin: 0px 13px;
+  border-radius: 34px;
+}
+
+.songList {
+  margin: auto;
+  margin-top: 55px;
+}
+
+.timestamp {
+  margin: 0 23px;
+}
+
+.timestamp i {
+  cursor: pointer;
 }
 
 
